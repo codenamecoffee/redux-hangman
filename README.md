@@ -35,8 +35,8 @@ Este proyecto es una implementación moderna del clásico juego del Ahorcado. Se
 
 <br>
 
-- You can try this game live [here.](https://codenamecoffee.github.io/ReduxHangman/)
-- Puedes probar el juego en vivo [aquí.](https://codenamecoffee.github.io/ReduxHangman/)
+- You can try this game live [here.](https://codenamecoffee.github.io/redux-hangman/)
+- Puedes probar el juego en vivo [aquí.](https://codenamecoffee.github.io/redux-hangman/)
 
 <br>
 
@@ -63,6 +63,45 @@ npm run dev
 <br>
 
 > Then open your browser and visit the local server URL provided in the terminal (usually http://localhost:5173).
+
+<br>
+
+## 🚀 Deploying to GitHub Pages
+
+To deploy this project to GitHub Pages using Yarn and Vite:
+
+1. **Update the `base` property in `vite.config.js`:**  
+   Set it to `/<your-repo-name>/` (e.g., `/redux-hangman/`).
+
+2. **Install `gh-pages` as a dev dependency:**
+
+   ```bash
+   yarn add --dev gh-pages
+   ```
+
+3. **Add a deploy script to your `package.json`:**
+
+   ```json
+   "scripts": {
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+
+4. **Build and deploy:**
+
+   ```bash
+   yarn build
+   yarn deploy
+   ```
+
+5. **Enable GitHub Pages:**  
+   Go to your repository’s **Settings > Pages**, select the `gh-pages` branch and `/ (root)` folder as the source.
+
+Your site will be available at:  
+`https://<your-username>.github.io/<your-repo-name>/`
+
+**Note:**  
+If you rename your repository, update the `base` property in `vite.config.js` and redeploy.
 
 <br>
 
